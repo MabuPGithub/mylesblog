@@ -43,4 +43,6 @@
   
 <ul>
   <li><%= link_to "Edit", edit_horse_path(@horse) %></li>
+
+  <li><%= link_to "Destroy", horse_path(@horse), method: :delete, data: { confirm: "Are you sure?" } %></li>
 </ul>

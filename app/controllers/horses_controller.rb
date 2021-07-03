@@ -35,6 +35,13 @@ class HorsesController < ApplicationController
     end
   end
 
+  def destroy
+    @horse = Horse.find(params[:id])
+    @horse.destroy
+
+    redirect_to root_path
+  end
+
   private
     def horse_params
       params.require(:horse).permit(:name, :turf_grade, :dirt_grade, :shortdistance_grade, :miledistance_grade, :middistance_grade, :longdistance_grade, :runner_grade, :leader_grade, :betweener_grade, :chaser_grade)

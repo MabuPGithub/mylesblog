@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get "/horse", to: "horse#index"
   get "/horses/:id", to: "horses#show"
+
+  resources :articles
 end

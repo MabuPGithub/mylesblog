@@ -3,7 +3,7 @@
 <ul>
   <% @horses.each do |horse| %>
     <li>
-      <a href="/horses/<%= horse.id %>">
+      <a href="<%= horse_path(horse) %>">
         <%= horse.name %>
       </a>
     </li>

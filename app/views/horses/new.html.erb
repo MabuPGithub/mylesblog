@@ -1,0 +1,62 @@
+<h1>New Horse</h1>
+
+<%= form_with model: @horse do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :turf_grade %><br>
+    <%= form.text_field :turf_grade %>
+  </div>
+
+  <div>
+    <%= form.label :dirt_grade %><br>
+    <%= form.text_field :dirt_grade %>
+  </div>
+
+  <div>
+    <%= form.label :shortdistance_grade %><br>
+    <%= form.text_field :shortdistance_grade %>
+  </div>
+
+  <div>
+    <%= form.label :miledistance_grade %><br>
+    <%= form.text_field :miledistance_grade %>
+  </div>
+
+  <div>
+    <%= form.label :middistance_grade %><br>
+    <%= form.text_field :middistance_grade %>
+  </div>
+
+  <div>
+    <%= form.label :longdistance_grade %><br>
+    <%= form.text_field :longdistance_grade %>
+  </div>
+
+  <div>
+    <%= form.label :runner_grade %><br>
+    <%= form.text_field :runner_grade %>
+  </div>
+
+  <div>
+    <%= form.label :leader_grade %><br>
+    <%= form.text_field :leader_grade %>
+  </div>
+
+  <div>
+    <%= form.label :betweener_grade %><br>
+    <%= form.text_field :betweener_grade %>
+  </div>
+
+  <div>
+    <%= form.label :chaser_grade %><br>
+    <%= form.text_field :chaser_grade %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

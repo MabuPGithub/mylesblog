@@ -1,11 +1,13 @@
-<h1>Horses#index</h1>
+<h1>Horses</h1>
 
 <ul>
   <% @horses.each do |horse| %>
     <li>
-      <a href="<%= horse_path(horse) %>">
+      <a href="/horses/<%= horse.id %>">
         <%= horse.name %>
       </a>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "New Horse", new_horse_path %>

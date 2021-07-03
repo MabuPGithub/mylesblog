@@ -1,0 +1,43 @@
+
+    <table>
+    <caption><%=@horse.name%> Grades</caption>
+    <tr>
+      <td></td>
+      <td>芝</td>
+      <td>ダート</td>
+    </tr>
+    <tr>
+      <td>バ場</td>
+      <td><%=@horse.turf_grade%></td>
+      <td><%=@horse.dirt_grade%></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>短距離</td>
+      <td>マイル</td>
+      <td>中距離</td>
+      <td>長距離</td>
+    </tr>
+    <tr>
+      <td>距離</td>
+      <td><%=@horse.shortdistance_grade%></td>
+      <td><%=@horse.miledistance_grade%></td>
+      <td><%=@horse.middistance_grade%></td>
+      <td><%=@horse.longdistance_grade%></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>逃げ</td>
+      <td>先行</td>
+      <td>差し</td>
+      <td>追込</td>
+    </tr>
+    <tr>
+      <td>脚質</td>
+      <td><%=@horse.runner_grade%></td>
+      <td><%=@horse.leader_grade%></td>
+      <td><%=@horse.betweener_grade%></td>
+      <td><%=@horse.chaser_grade%></td>
+    </tr>
+  </table>
+  

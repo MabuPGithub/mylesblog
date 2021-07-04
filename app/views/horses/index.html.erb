@@ -1,4 +1,19 @@
-<h1>Horses</h1>
+<header>
+  <div id="logo">
+    <%=image_tag("mb_logo.png",size: "450")%>
+  </div>
+</header>
+
+<div id="new_horse">
+  <%= link_to "Register Horse", new_horse_path %>
+</div>
+
+
+<hr class="rounded">
+
+<div id="title_list">
+  <%=image_tag("h3_umamusume-d6e4a4d.png",size: "200x50")%>
+</div>
 
 <ul>
   <% @horses.each do |horse| %>
@@ -10,4 +25,3 @@
   <% end %>
 </ul>
 
-<%= link_to "New Horse", new_horse_path %>

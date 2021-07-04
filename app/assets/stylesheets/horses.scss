@@ -1,3 +1,30 @@
 // Place all the styles related to the Horses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    background-image: url('https://umamusume.jp/_nuxt/images/bg_main-7c76a33.jpg');
+}
+
+#new_horse {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  width:85%
+}
+
+#title_list {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}

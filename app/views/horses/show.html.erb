@@ -41,8 +41,6 @@
     </tr>
   </table>
   
-<ul>
-  <li><%= link_to "Edit", edit_horse_path(@horse) %></li>
+<%= button_to "Edit", edit_horse_path(@horse), :class => "button", :method => :get %>
 
-  <li><%= link_to "Destroy", horse_path(@horse), method: :delete, data: { confirm: "Are you sure?" } %></li>
-</ul>
+<%= button_to "Destroy", horse_path(@horse), :class => "button", method: :delete, data: { confirm: "Are you sure?" } %>

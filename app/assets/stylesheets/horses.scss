@@ -14,7 +14,7 @@ body {
 }
 
 hr.rounded {
-  border-top: 8px solid #bbb;
+  border-top: 8px solid rgb(238, 130, 238);
   border-radius: 5px;
   width:85%
 }
@@ -47,7 +47,7 @@ a {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgb(238, 130, 238);
   transition: 0.3s;
   width: 150px;
   border-radius: 5px;
@@ -68,4 +68,28 @@ a {
   border-radius: 5px 5px 0 0;
   max-width: 100%;
   padding-bottom: 10px;
+}
+
+// button
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(238, 130, 238);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-bottom: 50px;
+}
+
+.button:hover {background-color: rgb(238, 130, 141)}
+
+.button:active {
+  background-color: rgb(238, 130, 141);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

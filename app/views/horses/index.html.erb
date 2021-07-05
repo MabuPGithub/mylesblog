@@ -12,16 +12,18 @@
 <hr class="rounded">
 
 <div id="title_list">
-  <%=image_tag("h3_umamusume-d6e4a4d.png",size: "200x50")%>
+  <%=image_tag("h3_umamusume-d6e4a4d.png",size: "180x40")%>
 </div>
 
-<ul>
+<div id="card_container">
   <% @horses.each do |horse| %>
-    <li>
-      <a href="/horses/<%= horse.id %>">
+    <div class="card">
+      
+      <div class="container">
+      <%=image_tag("black-head-horse.jpg", :class => "style_image")%>
+        <a href="/horses/<%= horse.id %>">
         <%= horse.name %>
-      </a>
-    </li>
+      </div>
+    </div>
   <% end %>
-</ul>
-
+</div>

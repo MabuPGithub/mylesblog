@@ -4,6 +4,7 @@
 
 body {
     background-image: url('https://umamusume.jp/_nuxt/images/bg_main-7c76a33.jpg');
+    font-family: 'Calibri';
 }
 
 #new_horse {
@@ -27,4 +28,44 @@ hr.rounded {
 #logo {
   display: flex;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Card
+
+#card_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 150px;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.style_image {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  padding-bottom: 10px;
 }

@@ -1,3 +1,13 @@
+
+<div id="title_container">
+  <%= image_tag("horseshoe.png", size: "50") %>
+  <h1>エディット・ウマ</h1>
+  <%= image_tag("horseshoe.png", size: "50") %>
+</div>
+
+<div id="flex_container">
+
+  <div id="form_container">
 <%= form_with model: horse do |form| %>
   <div>
     <%= form.label :name, "名前:" %>
@@ -53,6 +63,10 @@
     <%= form.label :chaser_grade, "追込のグレード:" %>
     <%= form.text_field :chaser_grade %>
   </div>
+  </div>
+</div>
 
+<div id="submit_container">
     <%= form.submit "エディット",:class => 'button' %>
 <% end %>
+</div>

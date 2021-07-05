@@ -1,15 +1,24 @@
+<div id="title_container">
+  <%= image_tag("horseshoe.png", size: "50") %>
+  <h1><%=@horse.name%>のグレード</h1>
+  <%= image_tag("horseshoe.png", size: "50") %>
+</div>
 
-    <table>
-    <caption><%=@horse.name%> Grades</caption>
+<div id="table_container">
+    <table id="horse_table">
     <tr>
       <td></td>
       <td>芝</td>
       <td>ダート</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>バ場</td>
       <td><%=@horse.turf_grade%></td>
       <td><%=@horse.dirt_grade%></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td></td>
@@ -40,7 +49,12 @@
       <td><%=@horse.chaser_grade%></td>
     </tr>
   </table>
+  </div>
   
-<%= button_to "エディット", edit_horse_path(@horse), :class => "button", :method => :get %>
-
-<%= button_to "破壊する", horse_path(@horse), :class => "button", method: :delete, data: { confirm: "Are you sure?" } %>
+  <div id="submit_container">
+    <%= button_to "戻る", root_path, :class => "button", :method => :get %>
+    <div id="space"></div>
+    <%= button_to "エディット", edit_horse_path(@horse), :class => "button", :method => :get %>
+    <div id="space"></div>
+    <%= button_to "破壊する", horse_path(@horse), :class => "button", method: :delete, data: { confirm: "Are you sure?" } %>
+  </div>
